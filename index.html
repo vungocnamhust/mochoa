@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bản đồ tri thức Dự án Quế Hoa Ba Vì - Hệ thống thông tin toàn diện về khởi nghiệp nông nghiệp sạch">
+    <title>Quế Hoa Ba Vì — Knowledge System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <span class="logo-icon">🌿</span>
+                <h1>QUẾ HOA BA VÌ</h1>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#knowledge-map">Bản Đồ</a></li>
+                <li><a href="#storytelling">Câu Chuyện</a></li>
+                <li><a href="#plant">Cây Trồng</a></li>
+                <li><a href="#finance">Tài Chính</a></li>
+                <li><a href="#diary">Nhật Ký</a></li>
+                <li><a href="#traceability">Truy Xuất</a></li>
+                <li><a href="#open-finance">Tài Chính Mở</a></li>
+                <li><a href="#data-journey">Dữ Liệu</a></li>
+                <li><a href="#progress">Tiến Độ</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🌸 Dự án Nông nghiệp Sinh thái Ba Vì</div>
+            <h1>Bản Đồ Tri Thức<span class="highlight">Dự Án Quế Hoa</span></h1>
+            <p class="hero-description">Nơi sản phẩm tự kể câu chuyện của chính mình — Minh bạch hóa giá trị thật thông
+                qua
+                công nghệ, từ vùng đất, con người đến cách canh tác.</p>
+            <p class="hero-subtitle">Marketing 0 đồng · 5 Trụ cột bền vững · Kết nối mọi khía cạnh thành bức tranh lớn
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat"><span class="number" data-count="2520">0</span><span class="label">Cây đã
+                        trồng</span></div>
+                <div class="hero-stat"><span class="number" data-count="7">0</span><span class="label">Lĩnh vực tri
+                        thức</span></div>
+                <div class="hero-stat"><span class="number" data-count="3">0</span><span class="label">Hộ dân tham
+                        gia</span></div>
+            </div>
+        </div>
+        <a href="#knowledge-map" class="scroll-indicator"><span></span></a>
+    </section>
+
+    <!-- KNOWLEDGE MAP - Central System Diagram -->
+    <section class="knowledge-map" id="knowledge-map">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">🗺️ BẢN ĐỒ HỆ THỐNG</span>
+                <h2>Bức Tranh Lớn — Connecting The Dots</h2>
+                <p>Mỗi lĩnh vực là một mảnh ghép. Nhìn vào để biết đã làm được gì, cần hướng tới điều gì, và thông tin
+                    mới nằm ở đâu.</p>
+            </div>
+            <div class="map-container" id="mapContainer">
+                <svg class="map-connections" id="mapSvg"></svg>
+                <div class="map-center">
+                    <span class="center-icon">🌿</span>
+                    <span class="center-title">QUẾ HOA</span>
+                    <span class="center-sub">Ba Vì · Làng Gạo</span>
+                </div>
+                <div class="nodes-wrapper" id="nodesWrapper">
+                    <div class="knowledge-node" data-domain="plant" data-angle="0">
+                        <span class="node-icon">🌱</span>
+                        <span class="node-title">Cây Trồng</span>
+                        <span class="node-status done">● Có dữ liệu</span>
+                    </div>
+                    <div class="knowledge-node" data-domain="technique" data-angle="51">
+                        <span class="node-icon">🧑‍🌾</span>
+                        <span class="node-title">Kỹ Thuật Canh Tác</span>
+                        <span class="node-status done">● Có dữ liệu</span>
+                    </div>
+                    <div class="knowledge-node" data-domain="production" data-angle="102">
+                        <span class="node-icon">🏭</span>
+                        <span class="node-title">Thu Hoạch & Chế Biến</span>
+                        <span class="node-status progress">● Đang triển khai</span>
+                    </div>
+                    <div class="knowledge-node" data-domain="finance" data-angle="153">
+                        <span class="node-icon">💰</span>
+                        <span class="node-title">Tài Chính</span>
+                        <span class="node-status done">● Có dữ liệu</span>
+                    </div>
+                    <div class="knowledge-node" data-domain="market" data-angle="204">
+                        <span class="node-icon">📊</span>
+                        <span class="node-title">Thị Trường</span>
+                        <span class="node-status done">● Có dữ liệu</span>
+                    </div>
+                    <div class="knowledge-node" data-domain="legal" data-angle="255">
+                        <span class="node-icon">⚖️</span>
+                        <span class="node-title">Pháp Lý & Thương Hiệu</span>
+                        <span class="node-status progress">● Đang triển khai</span>
+                    </div>
+                    <div class="knowledge-node" data-domain="comm" data-angle="306">
+                        <span class="node-icon">📣</span>
+                        <span class="node-title">Truyền Thông & Bán Hàng</span>
+                        <span class="node-status planned">● Kế hoạch</span>
+                    </div>
+                </div>
+            </div>
+            <div class="map-legend">
+                <div class="legend-item"><span class="legend-dot" style="background:var(--status-done)"></span> Có dữ
+                    liệu</div>
+                <div class="legend-item"><span class="legend-dot" style="background:var(--status-progress)"></span> Đang
+                    triển khai</div>
+                <div class="legend-item"><span class="legend-dot" style="background:var(--status-planned)"></span> Kế
+                    hoạch</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOMAIN DETAILS -->
+    <section id="domains">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">📚 CHI TIẾT LĨNH VỰC</span>
+                <h2>Hệ Thống Tri Thức Dự Án</h2>
+                <p>Nhấn vào từng lĩnh vực để xem chi tiết. Mỗi mục có trạng thái riêng — giúp bạn biết chính xác vị trí
+                    hiện tại của dự án.</p>
+            </div>
+            <div class="domain-grid">
+                <!-- Domain 1: Plant -->
+                <div class="domain-card fade-in" id="plant">
+                    <div class="domain-header">
+                        <div class="domain-icon">🌱</div>
+                        <div class="domain-progress"><span class="percent">90%</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width:90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Kiến Thức Cây Quế Hoa</h3>
+                    <p class="domain-desc">Osmanthus Fragrans · 桂花 · Mộc Tê — Cây thân gỗ nhỏ, nguồn gốc Nam Trung Quốc.
+                    </p>
+                    <div class="knowledge-items">
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Đặc tính thực vật
+                                học</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Giống cây (Tứ Quý Quế,
+                                Kim Quế)</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Điều kiện sinh
+                                trưởng</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Mùa hoa & Thu
+                                hoạch</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot progress"></span><span class="k-label">Giá trị y học & ẩm
+                                thực</span><span class="k-tag progress">Đang nghiên cứu</span></div>
+                    </div>
+                    <div class="detail-panel" id="detail-plant">
+                        <h4>🌿 Chi tiết Cây Quế Hoa</h4>
+                        <div class="detail-content">
+                            <p><strong>Nguồn gốc:</strong> Miền Nam Trung Quốc. Cây thân gỗ nhỏ, ưa nắng, ưa ẩm và môi
+                                trường thông thoáng.</p>
+                            <p><strong>Mùa hoa:</strong> Tự nhiên tập trung tháng 9-10. Giống Tứ Quý Quế nở rải rác
+                                quanh năm.</p>
+                            <p><strong>Ánh sáng:</strong> Cây con cần ánh sáng tán xạ (<4h nắng). Cây trưởng thành cần
+                                    6-8h nắng trực tiếp/ngày — yếu tố then chốt quyết định ra hoa.</p>
+                                    <p><strong>Đất:</strong> Ưa đất axit nhẹ, tơi xốp, thoát nước tốt. Rất sợ ngập úng.
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain 2: Techniques -->
+                <div class="domain-card fade-in" id="technique">
+                    <div class="domain-header">
+                        <div class="domain-icon">🧑‍🌾</div>
+                        <div class="domain-progress"><span class="percent">85%</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Kỹ Thuật Canh Tác</h3>
+                    <p class="domain-desc">Quy trình trồng, chăm sóc, bón phân theo tiêu chuẩn nông nghiệp sạch.</p>
+                    <div class="knowledge-items">
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Chọn giống & trồng
+                                cây</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Lịch bón phân NPK (4
+                                giai đoạn)</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Chế độ tưới nước theo
+                                mùa</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Cắt tỉa & phòng
+                                bệnh</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot progress"></span><span class="k-label">Tiêu chuẩn canh
+                                tác sạch</span><span class="k-tag progress">Đang áp dụng</span></div>
+                    </div>
+                    <div class="detail-panel" id="detail-technique">
+                        <h4>📋 Lịch Bón Phân NPK Cho Quế Hoa</h4>
+                        <div class="detail-content">
+                            <table class="cost-table">
+                                <thead>
+                                    <tr>
+                                        <th>Giai đoạn</th>
+                                        <th>Loại NPK</th>
+                                        <th>Liều lượng</th>
+                                        <th>Mục đích</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bón lót (trước trồng)</td>
+                                        <td>NPK 16-16-8</td>
+                                        <td>150-200g/gốc</td>
+                                        <td>Phát triển rễ, cây con khỏe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thúc lần 1 (sau 1-2 tháng)</td>
+                                        <td>NPK 20-20-15</td>
+                                        <td>50-100g/gốc</td>
+                                        <td>Thúc tăng trưởng thân, lá</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thúc lần 2 (tháng 7-8)</td>
+                                        <td>NPK 6-30-30</td>
+                                        <td>100-150g/gốc</td>
+                                        <td>Kích thích phân hóa mầm hoa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sau hoa tàn</td>
+                                        <td>NPK 16-16-8</td>
+                                        <td>100-150g/gốc</td>
+                                        <td>Phục hồi sức khỏe cây</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><strong>Nguyên tắc sạch:</strong> Không phun thuốc cỏ, không thuốc trừ sâu, chỉ bón phân
+                                chuồng hoai mục. Tưới theo nguyên tắc "thấy khô mới tưới".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain 3: Production -->
+                <div class="domain-card fade-in" id="production">
+                    <div class="domain-header">
+                        <div class="domain-icon">🏭</div>
+                        <div class="domain-progress"><span class="percent">40%</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width:40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Thu Hoạch & Chế Biến</h3>
+                    <p class="domain-desc">Từ hoa tươi → sấy thăng hoa → đóng gói túi lọc thành phẩm.</p>
+                    <div class="knowledge-items">
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Thu hoạch sáng sớm
+                                (giữ hương)</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Công nghệ sấy thăng
+                                hoa</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot planned"></span><span class="k-label">Đầu tư máy sấy
+                                riêng</span><span class="k-tag planned">Kế hoạch</span></div>
+                        <div class="k-item"><span class="k-dot planned"></span><span class="k-label">Máy đóng gói tự
+                                động</span><span class="k-tag planned">Kế hoạch</span></div>
+                        <div class="k-item"><span class="k-dot planned"></span><span class="k-label">Thiết kế bao bì
+                                thương hiệu</span><span class="k-tag planned">Kế hoạch</span></div>
+                    </div>
+                    <div class="detail-panel" id="detail-production">
+                        <h4>⚙️ Quy Trình Chế Biến</h4>
+                        <div class="detail-content">
+                            <p><strong>Bước 1 — Thu hoạch:</strong> Hái vào sáng sớm khi hương đậm nhất. Năng suất ~100g
+                                hoa tươi/cây/năm.</p>
+                            <p><strong>Bước 2 — Sấy thăng hoa:</strong> Công nghệ freeze-dry giữ nguyên hương vị, dinh
+                                dưỡng. Chi phí 4.000.000đ/mẻ 20kg tươi. Tỉ lệ 6:1 (6kg tươi → 1kg khô).</p>
+                            <p><strong>Bước 3 — Đóng gói:</strong> 5g khô/túi lọc sợi ngô, 25-30 túi/hộp. Máy đóng gói
+                                tự động 16tr, công suất 15-25 túi/phút.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain 4: Finance -->
+                <div class="domain-card fade-in" id="finance-domain">
+                    <div class="domain-header">
+                        <div class="domain-icon">💰</div>
+                        <div class="domain-progress"><span class="percent">70%</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width:70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Tài Chính & Đầu Tư</h3>
+                    <p class="domain-desc">Mô hình tài chính minh bạch — mọi chi phí được ghi chép cẩn thận.</p>
+                    <div class="knowledge-items">
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Chi phí cây giống &
+                                trồng</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Chi phí vận hành hàng
+                                năm</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Giá thành sản
+                                phẩm</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot progress"></span><span class="k-label">Ghi chép đầu tư
+                                thực tế Đợt 1</span><span class="k-tag progress">Đang ghi nhận</span></div>
+                        <div class="k-item"><span class="k-dot planned"></span><span class="k-label">Cơ chế định chế tài
+                                chính</span><span class="k-tag planned">Kế hoạch</span></div>
+                    </div>
+                </div>
+
+                <!-- Domain 5: Market -->
+                <div class="domain-card fade-in" id="market-domain">
+                    <div class="domain-header">
+                        <div class="domain-icon">📊</div>
+                        <div class="domain-progress"><span class="percent">60%</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width:60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Phân Tích Thị Trường</h3>
+                    <p class="domain-desc">Nghiên cứu thực trạng, cơ hội và khoảng trống thương hiệu.</p>
+                    <div class="knowledge-items">
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Thực trạng thị trường
+                                VN</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Phân tích giá & ngưỡng
+                                giá</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Khoảng trống thương
+                                hiệu</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot progress"></span><span class="k-label">Nghiên cứu thị
+                                trường TQ</span><span class="k-tag progress">Đang nghiên cứu</span></div>
+                        <div class="k-item"><span class="k-dot planned"></span><span class="k-label">Chiến lược xuất
+                                khẩu</span><span class="k-tag planned">Kế hoạch</span></div>
+                    </div>
+                </div>
+
+                <!-- Domain 6: Legal -->
+                <div class="domain-card fade-in" id="legal-domain">
+                    <div class="domain-header">
+                        <div class="domain-icon">⚖️</div>
+                        <div class="domain-progress"><span class="percent">30%</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width:30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Pháp Lý & Thương Hiệu</h3>
+                    <p class="domain-desc">Tư cách pháp nhân, bảo hộ thương hiệu, chứng nhận sản phẩm.</p>
+                    <div class="knowledge-items">
+                        <div class="k-item"><span class="k-dot done"></span><span class="k-label">Pháp nhân HTX Chân
+                                Minh</span><span class="k-tag done">✓</span></div>
+                        <div class="k-item"><span class="k-dot progress"></span><span class="k-label">Mô hình hạch toán
+                                riêng</span><span class="k-tag progress">Đang bàn</span></div>
+                        <div class="k-item"><span class="k-dot progress"></span><span class="k-label">Đăng ký bảo hộ
+                                nhãn hiệu</span><span class="k-tag progress">Đã nộp hồ sơ</span></div>
+                        <div class="k-item"><span class="k-dot planned"></span><span class="k-label">Chứng nhận hữu
+                                cơ</span><span class="k-tag planned">Kế hoạch</span></div>
+                        <div class="k-item"><span class="k-dot planned"></span><span class="k-label">Quy chuẩn bao bì
+                                lưu hành</span><span class="k-tag planned">Kế hoạch</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINANCE DETAILED -->
+    <section id="finance">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">💰 TÀI CHÍNH MINH BẠCH</span>
+                <h2>Bài Toán Kinh Tế — Cho 1 Sào (500 cây)</h2>
+                <p>Mọi con số đều được ghi chép thực tế, minh bạch. Đây là nền tảng để học và hoàn thiện.</p>
+            </div>
+            <div class="finance-grid fade-in">
+                <div class="finance-card">
+                    <div class="f-icon">🌱</div>
+                    <div class="f-value">20.000đ</div>
+                    <div class="f-label">Giá cây giống/cây<br><small style="color:var(--green-light)">Thực tế: 7.000đ
+                            (thanh lý)</small></div>
+                </div>
+                <div class="finance-card">
+                    <div class="f-icon">📦</div>
+                    <div class="f-value">3.620.000đ</div>
+                    <div class="f-label">Giá thành / 1kg hoa sấy khô</div>
+                </div>
+                <div class="finance-card">
+                    <div class="f-icon">💵</div>
+                    <div class="f-value">400.000đ</div>
+                    <div class="f-label">Giá bán / gói 20 túi lọc</div>
+                </div>
+                <div class="finance-card">
+                    <div class="f-icon">📈</div>
+                    <div class="f-value">120 triệu</div>
+                    <div class="f-label">Lãi ròng dự kiến / ha / năm</div>
+                </div>
+            </div>
+
+            <h3 class="text-center mb-lg fade-in" style="color:var(--gold)">Chi Phí Sản Xuất Năm Đầu (10.000 cây)</h3>
+            <div class="fade-in">
+                <table class="cost-table">
+                    <thead>
+                        <tr>
+                            <th>Hạng mục</th>
+                            <th>Chi tiết</th>
+                            <th class="amount">Chi phí</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. Cây giống</td>
+                            <td>10.000 cây × 20.000đ</td>
+                            <td class="amount">200.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>2. Lân vôi bón lót</td>
+                            <td>1 tấn lân + 2 tạ vôi</td>
+                            <td class="amount">8.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>3. Công trồng</td>
+                            <td>60 công × 250.000đ</td>
+                            <td class="amount">15.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>4. Chăm sóc tưới tắm</td>
+                            <td>3 vườn, 1 tháng đầu</td>
+                            <td class="amount">7.500.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>5. Phân bón thúc</td>
+                            <td>3 tấn phân hoai mục</td>
+                            <td class="amount">15.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>6. Công cắt cỏ</td>
+                            <td>3 lần/năm</td>
+                            <td class="amount">3.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>7. Thuê đất</td>
+                            <td>30 sào</td>
+                            <td class="amount">15.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>8. Công hái hoa</td>
+                            <td>1.000kg tươi × 300đ/g</td>
+                            <td class="amount">300.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>9. Sấy thăng hoa</td>
+                            <td>50 mẻ × 4.000.000đ</td>
+                            <td class="amount">200.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>10. Đóng gói, kho vận</td>
+                            <td>Bao bì, hút chân không</td>
+                            <td class="amount">2.000.000đ</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="2"><strong>TỔNG (khấu hao giống 5 năm)</strong></td>
+                            <td class="amount"><strong>~600.000.000đ</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="finance-grid mt-xl fade-in">
+                <div class="finance-card">
+                    <div class="f-icon">🎯</div>
+                    <div class="f-value">160 kg</div>
+                    <div class="f-label">Sản lượng khô / năm</div>
+                </div>
+                <div class="finance-card">
+                    <div class="f-icon">📦</div>
+                    <div class="f-value">4.000</div>
+                    <div class="f-label">Gói thành phẩm (20 túi/gói)</div>
+                </div>
+                <div class="finance-card">
+                    <div class="f-icon">👥</div>
+                    <div class="f-value">~700</div>
+                    <div class="f-label">Khách hàng cần (2 tháng/gói)</div>
+                </div>
+                <div class="finance-card">
+                    <div class="f-icon">💎</div>
+                    <div class="f-value">1.6 tỷ</div>
+                    <div class="f-label">Tổng doanh thu dự kiến / năm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARKET ANALYSIS -->
+    <section id="market">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">📊 PHÂN TÍCH THỊ TRƯỜNG</span>
+                <h2>Thực Trạng & Cơ Hội</h2>
+                <p>Thị trường hoa mộc Việt Nam đang là "thị trường hàng hóa" — chưa ai dẫn dắt về thương hiệu.</p>
+            </div>
+            <div class="market-insights fade-in">
+                <div class="insight-card">
+                    <div class="insight-icon">🔍</div>
+                    <h4>Thực Trạng Hiện Tại</h4>
+                    <ul>
+                        <li>Phần lớn mua để làm bánh, chè, thạch — chưa phải đồ uống chính</li>
+                        <li>Sấy khô truyền thống: ~100.000đ/100g</li>
+                        <li>Sấy thăng hoa: ~660.000đ/100g, bán ít hơn đáng kể</li>
+                        <li>Cạnh tranh chủ yếu bằng giá, review — không có thương hiệu</li>
+                        <li>Store có 7.000+ đơn nhưng không rõ nguồn gốc</li>
+                    </ul>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">🚀</div>
+                    <h4>Cơ Hội Lớn</h4>
+                    <ul>
+                        <li><strong>Nhu cầu có thật:</strong> 7.000+ đơn chứng minh thị trường</li>
+                        <li><strong>Khoảng trống thương hiệu:</strong> Chưa ai xây dựng vườn hoa mộc minh bạch</li>
+                        <li>Chưa ai kể câu chuyện nguồn gốc sản phẩm</li>
+                        <li>Chưa ai minh bạch quy trình sản xuất</li>
+                        <li><strong>→ Cơ hội dẫn dắt thị trường!</strong></li>
+                    </ul>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">⚡</div>
+                    <h4>Chiến Lược Của Chúng Tôi</h4>
+                    <ul>
+                        <li>Sản xuất minh bạch, truy xuất nguồn gốc</li>
+                        <li>Xây dựng thương hiệu "Quế Hoa Ba Vì"</li>
+                        <li>Từ nguyên liệu phụ → đồ uống thưởng thức</li>
+                        <li>Định vị premium: sấy thăng hoa + câu chuyện</li>
+                        <li>Mục tiêu: 20-30k/ngày uống = phổ cập được</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 PILLARS — STORYTELLING / MARKETING 0 ĐỒNG -->
+    <section id="storytelling" class="storytelling-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">🌿 MARKETING 0 ĐỒNG</span>
+                <h2>5 Trụ Cột — Sản Phẩm Tự Kể Chuyện</h2>
+                <p>"Storytelling trong nông nghiệp không nằm ở việc thêu dệt quảng cáo xa rời thực tế, mà là minh bạch
+                    hóa giá trị thật để sản phẩm tự kể câu chuyện của chính mình."</p>
+            </div>
+
+            <div class="pillar-grid">
+                <!-- PILLAR 1: Chuyển đổi số -->
+                <div class="pillar-card fade-in" data-pillar="digital">
+                    <div class="pillar-header">
+                        <div class="pillar-icon-wrap">
+                            <span class="pillar-icon">🔄</span>
+                            <span class="pillar-number">01</span>
+                        </div>
+                        <h3>Chuyển Đổi Số</h3>
+                        <p class="pillar-tagline">Minh bạch hóa "lý lịch" sản phẩm</p>
+                    </div>
+                    <div class="pillar-body">
+                        <div class="pillar-section">
+                            <h4>✅ Đã triển khai</h4>
+                            <ul>
+                                <li>📝 Nhật ký vườn ghi chép hàng ngày (ảnh + GPS + ghi chú)</li>
+                                <li>📱 QR truy xuất: quét mã → biết vùng trồng, người chăm, ngày trồng</li>
+                                <li>💰 Sổ tài chính mở: mọi đồng đều minh bạch, có bằng chứng</li>
+                                <li>🗺️ Website = Bản đồ tri thức kết nối mọi thông tin dự án</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-section pillar-future">
+                            <h4>🎯 Hướng tới</h4>
+                            <ul>
+                                <li>🎙️ Nhật ký giọng nói — nông dân nói, hệ thống ghi (NÔNG KÝ)</li>
+                                <li>📡 Kết nối AutoAgri cho dữ liệu chuẩn VietGAP</li>
+                                <li>🏛️ Hệ thống TXNG theo QĐ 25/BNNMT (bắt buộc từ 07/2026)</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-actions">
+                            <span class="pillar-actions-title">💡 Cách làm cụ thể</span>
+                            <div class="action-list">
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Chụp ảnh + ghi note mỗi lần ra vườn, đăng vào nhật ký website ngay hôm
+                                        đó</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Mỗi giao dịch (mua cây, thuê đất, trả công) → chụp biên lai → upload vào sổ
+                                        tài chính mở</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>In QR dán vào mỗi lô cây giống — quét mã → về trang nhật ký ngày hôm đó</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-soon">Sắp tới</span>
+                                    <span>Triển khai NÔNG KÝ: nông dân bấm nút → nói → hệ thống tự ghi vào nhật
+                                        ký</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pillar-proof">
+                        <a href="#diary">📖 Xem Nhật ký</a>
+                        <a href="#traceability">🔍 Thử QR</a>
+                        <a href="#open-finance">💰 Xem Tài chính</a>
+                    </div>
+                </div>
+
+                <!-- PILLAR 2: Thương mại công bằng -->
+                <div class="pillar-card fade-in" data-pillar="fairtrade">
+                    <div class="pillar-header">
+                        <div class="pillar-icon-wrap">
+                            <span class="pillar-icon">⚖️</span>
+                            <span class="pillar-number">02</span>
+                        </div>
+                        <h3>Thương Mại Công Bằng</h3>
+                        <p class="pillar-tagline">Chuỗi giá trị có trách nhiệm</p>
+                    </div>
+                    <div class="pillar-body">
+                        <div class="pillar-section">
+                            <h4>✅ Đã triển khai</h4>
+                            <ul>
+                                <li>🤝 3 mô hình hợp tác để nông dân chọn phù hợp nhất</li>
+                                <li>💵 Cam kết bao tiêu 450.000đ/kg hoa tươi</li>
+                                <li>🌱 Hỗ trợ cây giống 10.000đ/cây + tặng 120 cây cho hộ dân</li>
+                                <li>👨‍👩‍👧‍👦 3 hộ nông dân đã tham gia từ đợt 1</li>
+                                <li>⚖️ HTX Chân Minh: pháp nhân tập thể bảo vệ quyền lợi</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-section pillar-future">
+                            <h4>🎯 Hướng tới</h4>
+                            <ul>
+                                <li>🏘️ Mở rộng 10+ hộ dân tham gia</li>
+                                <li>🛡️ Cơ chế chia sẻ rủi ro mùa màng</li>
+                                <li>📈 Giá thu mua tăng theo năm, cam kết dài hạn</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-actions">
+                            <span class="pillar-actions-title">💡 Cách làm cụ thể</span>
+                            <div class="action-list">
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Ký hợp đồng <strong>giấy + ảnh scan</strong> với từng hộ nông dân, đăng lên
+                                        website (ẩn thông tin nhạy cảm)</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Công khai giá thu mua từng đợt — so sánh với giá thị trường để người mua thấy
+                                        nông dân được hưởng bao nhiêu</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Mỗi hộ dân có 1 profile nhỏ trên website: tên, diện tích, số cây, đợt tham
+                                        gia</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-soon">Sắp tới</span>
+                                    <span>Hội đồng nông dân: họp định kỳ, biên bản public — thể hiện quyền biểu quyết
+                                        thực sự</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pillar-proof">
+                        <a href="#partnership">🤝 Xem Mô hình</a>
+                    </div>
+                </div>
+
+                <!-- PILLAR 3: Nông nghiệp xanh -->
+                <div class="pillar-card fade-in" data-pillar="green">
+                    <div class="pillar-header">
+                        <div class="pillar-icon-wrap">
+                            <span class="pillar-icon">🌍</span>
+                            <span class="pillar-number">03</span>
+                        </div>
+                        <h3>Nông Nghiệp Xanh</h3>
+                        <p class="pillar-tagline">Thuận tự nhiên, chống biến đổi khí hậu</p>
+                    </div>
+                    <div class="pillar-body">
+                        <div class="pillar-section">
+                            <h4>✅ Đã cam kết</h4>
+                            <ul>
+                                <li>🚫 KHÔNG thuốc cỏ — cắt cỏ thủ công 3 lần/năm</li>
+                                <li>🚫 KHÔNG thuốc trừ sâu — quản lý dịch hại tự nhiên</li>
+                                <li>🐄 Chỉ bón phân chuồng hoai mục (phân gà, bò)</li>
+                                <li>🌳 Chuyển đổi vùng đất bỏ hoang → vườn sinh thái</li>
+                                <li>🏔️ Vùng trồng cạnh Vườn Quốc Gia Ba Vì — hệ sinh thái quý</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-section pillar-future">
+                            <h4>🎯 Hướng tới</h4>
+                            <ul>
+                                <li>🌡️ Đo lường carbon footprint từng lô sản phẩm</li>
+                                <li>📜 Chứng nhận hữu cơ quốc tế</li>
+                                <li>🌿 Trồng xen canh đa tầng, bảo tồn đa dạng sinh học</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-actions">
+                            <span class="pillar-actions-title">💡 Cách làm cụ thể</span>
+                            <div class="action-list">
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Chụp ảnh danh sách vật tư đầu vào mỗi đợt bón phân → gắn vào nhật ký. Không
+                                        cần lab test, chỉ cần minh bạch</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Video ngắn 30s: cảnh cắt cỏ tay, câu nói "tại sao không dùng thuốc cỏ" — đăng
+                                        TikTok, lưu vào kho source</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Gắn badge "Không hóa chất" lên sản phẩm kèm link tới nhật ký chứng minh</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-soon">Sắp tới</span>
+                                    <span>Xin chứng nhận PGS (Participatory Guarantee System) — chứng nhận hữu cơ do
+                                        cộng đồng xác nhận, dễ hơn chứng nhận quốc tế</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pillar-proof">
+                        <a href="#technique">🧑‍🌾 Xem Kỹ thuật</a>
+                    </div>
+                </div>
+
+                <!-- PILLAR 4: Chống lãng phí -->
+                <div class="pillar-card fade-in" data-pillar="circular">
+                    <div class="pillar-header">
+                        <div class="pillar-icon-wrap">
+                            <span class="pillar-icon">♻️</span>
+                            <span class="pillar-number">04</span>
+                        </div>
+                        <h3>Chống Lãng Phí</h3>
+                        <p class="pillar-tagline">Kinh tế tuần hoàn — biến "rác" thành tiền</p>
+                    </div>
+                    <div class="pillar-body">
+                        <div class="pillar-section">
+                            <h4>✅ Đã triển khai</h4>
+                            <ul>
+                                <li>❄️ Sấy thăng hoa (freeze-dry) giữ 100% hương vị, dinh dưỡng</li>
+                                <li>🍵 Trà ướp hoa mộc — kết hợp trà vùng Ba Vì</li>
+                                <li>🌸 Tận dụng 100% sản lượng hoa thu hoạch</li>
+                                <li>📦 Giá trị sản phẩm tăng gấp 6 lần so với bán thô</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-section pillar-future">
+                            <h4>🎯 Hướng tới</h4>
+                            <ul>
+                                <li>💎 Chế biến sâu: tinh dầu, mỹ phẩm, thực phẩm chức năng</li>
+                                <li>🌾 Phụ phẩm nông nghiệp → phân bón hữu cơ</li>
+                                <li>🔬 Đa dạng hóa sản phẩm từ cùng nguyên liệu</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-actions">
+                            <span class="pillar-actions-title">💡 Cách làm cụ thể</span>
+                            <div class="action-list">
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Ghi lại tỷ lệ chuyển đổi mỗi mẻ sấy: <strong>X kg tươi → Y g khô</strong>.
+                                        Công khai trên website = bằng chứng không pha trộn</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Bán combo: Trà ướp hoa mộc + gói hoa sấy → kể câu chuyện 2 người làm (anh
+                                        Trường làm trà, nhóm làm hoa)</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-soon">Sắp tới</span>
+                                    <span>Bùn thải sau sấy → ủ compost → bón lại vườn → vòng tuần hoàn khép kín. Quay
+                                        video chu trình này</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-soon">Sắp tới</span>
+                                    <span>Thử nghiệm 1 sản phẩm chế biến sâu: <strong>túi thơm hoa mộc khô</strong> —
+                                        zero waste, giá trị cao, dễ làm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pillar-proof">
+                        <a href="#production">🏭 Xem Chế biến</a>
+                    </div>
+                </div>
+
+                <!-- PILLAR 5: An ninh dinh dưỡng -->
+                <div class="pillar-card fade-in" data-pillar="nutrition">
+                    <div class="pillar-header">
+                        <div class="pillar-icon-wrap">
+                            <span class="pillar-icon">🥗</span>
+                            <span class="pillar-number">05</span>
+                        </div>
+                        <h3>An Ninh Dinh Dưỡng</h3>
+                        <p class="pillar-tagline">"Thực phẩm là thuốc" — ăn đúng, ăn sạch</p>
+                    </div>
+                    <div class="pillar-body">
+                        <div class="pillar-section">
+                            <h4>✅ Giá trị thực tế</h4>
+                            <ul>
+                                <li>🫖 Hoa mộc: thanh lọc cơ thể, an dưỡng tinh thần</li>
+                                <li>🫁 Y học: chữa bệnh đường hô hấp, làm trắng da</li>
+                                <li>💧 Thay nước uống hàng ngày — thơm, ngon, không chán</li>
+                                <li>❄️ Sấy thăng hoa giữ nguyên 100% dưỡng chất tự nhiên</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-section pillar-future">
+                            <h4>🎯 Hướng tới</h4>
+                            <ul>
+                                <li>🔬 Nghiên cứu hàm lượng dinh dưỡng, công bố trên bao bì</li>
+                                <li>🏥 Chứng nhận ATVSTP chuẩn quốc gia</li>
+                                <li>🧬 Kết hợp y học cổ truyền VN — "mỗi ly trà là bài thuốc"</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-actions">
+                            <span class="pillar-actions-title">💡 Cách làm cụ thể</span>
+                            <div class="action-list">
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Viết 1 bài "Uống hoa mộc thay nước mỗi ngày — thay đổi gì?" — trải nghiệm thật
+                                        của A. Phương sau 1 tháng liên tục</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Kể chuyện y học cổ truyền: hoa mộc trong Đông y trị gì? Link tới báo cáo khoa
+                                        học của Mạnh Cường</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-now">Làm ngay</span>
+                                    <span>Đóng gói thông điệp: <strong>"20.000đ/ngày = 1 ly trà hoa mộc sạch"</strong> →
+                                        so sánh với cà phê, trà đá vỉa hè</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="action-soon">Sắp tới</span>
+                                    <span>Hợp tác với 1 thầy thuốc đông y địa phương → endorsement tự nhiên, không trả
+                                        phí, chỉ cần mời uống thử</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pillar-proof">
+                        <a href="#plant">🌱 Xem Cây trồng</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Source Content Pipeline -->
+            <div class="source-content-block fade-in">
+                <div class="source-content-header">
+                    <span class="source-tag">🎙️ NGUỒN CHẤT LIỆU TRUYỀN THÔNG</span>
+                    <h3>Từ Thực Tế → Source → Content</h3>
+                    <p>Nội dung truyền thông thuyết phục nhất không phải do copywriter viết ra — mà được <strong>bóc
+                            tách từ những cuộc trò chuyện, khoảnh khắc thật ngoài đồng</strong>. Người làm truyền thông
+                        chỉ cần khai thác đúng chỗ.</p>
+                </div>
+
+                <div class="source-pipeline">
+
+                    <!-- Step 1: Capture -->
+                    <div class="source-step">
+                        <div class="source-step-icon">📱</div>
+                        <div class="source-step-body">
+                            <h4>Thu Thập — Ghi lại tất cả</h4>
+                            <p class="source-step-desc">Mọi khoảnh khắc thực tế đều có thể là nguồn content. Không cần
+                                dàn dựng.</p>
+                            <div class="source-examples">
+                                <div class="source-example">
+                                    <span class="source-example-icon">📞</span>
+                                    <div>
+                                        <strong>Ghi âm cuộc gọi với nông dân</strong>
+                                        <p>Anh Phương gọi điện hỏi thăm anh Quý về đường nước tưới — câu chuyện thật,
+                                            cảm xúc thật, vấn đề thật. Đây chính là raw source.</p>
+                                    </div>
+                                </div>
+                                <div class="source-example">
+                                    <span class="source-example-icon">🎙️</span>
+                                    <div>
+                                        <strong>Mở app ghi âm khi làm việc trên đồng</strong>
+                                        <p>Nông dân ghi nhật ký bằng giọng nói ngay khi tưới cây, bón phân — "Hôm nay
+                                            cây trông khỏe hơn hôm qua, thằng bé cũng ra phụ tôi buổi sáng..." Những câu
+                                            như vậy là vàng.</p>
+                                    </div>
+                                </div>
+                                <div class="source-example">
+                                    <span class="source-example-icon">💬</span>
+                                    <div>
+                                        <strong>Chat nhóm & thảo luận thực tế</strong>
+                                        <p>Cuộc trò chuyện trong nhóm Zalo/Lark về giá cây, cách trồng, kế hoạch — chứa
+                                            những câu chuyện của người thật, tình huống thật.</p>
+                                    </div>
+                                </div>
+                                <div class="source-example">
+                                    <span class="source-example-icon">📸</span>
+                                    <div>
+                                        <strong>Ảnh & video hậu trường</strong>
+                                        <p>Cảnh trồng cây ngày mưa, cả đội quây quần ăn cơm bên vườn, khoảnh khắc nhìn
+                                            cây ra hoa lần đầu — không cần selfie studio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="source-arrow">↓</div>
+
+                    <!-- Step 2: Raw Storage -->
+                    <div class="source-step">
+                        <div class="source-step-icon">🗄️</div>
+                        <div class="source-step-body">
+                            <h4>Lưu Trữ — Kho source tập trung</h4>
+                            <p class="source-step-desc">Không mất, không lẫn lộn. Mỗi file được gắn tag để dễ tìm.</p>
+                            <div class="source-tags-row">
+                                <span class="stag stag-audio">🎙️ Voice clip</span>
+                                <span class="stag stag-photo">📷 Ảnh thực địa</span>
+                                <span class="stag stag-chat">💬 Đoạn chat</span>
+                                <span class="stag stag-video">🎥 Video hậu trường</span>
+                                <span class="stag stag-note">📝 Ghi chú bổ sung</span>
+                                <span class="stag stag-doc">📄 Biên lai / chứng từ</span>
+                            </div>
+                            <p class="source-note">⚠️ <strong>Nguyên tắc:</strong> Source được lưu nội bộ, không phát
+                                tán. Khi dùng cần xin phép người liên quan nếu nội dung cá nhân.</p>
+                        </div>
+                    </div>
+
+                    <div class="source-arrow">↓</div>
+
+                    <!-- Step 3: Extract -->
+                    <div class="source-step">
+                        <div class="source-step-icon">✂️</div>
+                        <div class="source-step-body">
+                            <h4>Bóc Tách — Người làm truyền thông khai thác</h4>
+                            <p class="source-step-desc">Từ 1 buổi làm vườn 4 tiếng → có thể sinh ra 5–10 mảnh content
+                                khác nhau.</p>
+                            <div class="extract-grid">
+                                <div class="extract-item">
+                                    <span class="extract-platform">TikTok / Reels</span>
+                                    <span class="extract-desc">Clip 30–60s cảnh làm vườn có caption câu chuyện</span>
+                                </div>
+                                <div class="extract-item">
+                                    <span class="extract-platform">Facebook Story</span>
+                                    <span class="extract-desc">Ảnh + trích dẫn câu nói của nông dân</span>
+                                </div>
+                                <div class="extract-item">
+                                    <span class="extract-platform">Trang sản phẩm</span>
+                                    <span class="extract-desc">Câu chuyện nguồn gốc gắn liền với QR Code</span>
+                                </div>
+                                <div class="extract-item">
+                                    <span class="extract-platform">Email / Newsletter</span>
+                                    <span class="extract-desc">Nhật ký tháng — cập nhật tiến độ thực tế</span>
+                                </div>
+                                <div class="extract-item">
+                                    <span class="extract-platform">Nhật ký vườn (Web)</span>
+                                    <span class="extract-desc">Entry chi tiết gắn ngày, GPS, bằng chứng</span>
+                                </div>
+                                <div class="extract-item">
+                                    <span class="extract-platform">Pitch deck / B2B</span>
+                                    <span class="extract-desc">Case study thực tế cho đối tác, nhà phân phối</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="source-arrow">↓</div>
+
+                    <!-- Step 4: Publish -->
+                    <div class="source-step">
+                        <div class="source-step-icon">🚀</div>
+                        <div class="source-step-body">
+                            <h4>Phát Hành — Content tự lan tỏa</h4>
+                            <p class="source-step-desc">Vì nội dung thật → người xem tin → share → reach tự nhiên. Không
+                                cần chạy ads.</p>
+                            <div class="publish-principle">
+                                <div class="principle-item">
+                                    <span>✅</span>
+                                    <span><strong>Chân thực:</strong> Kể đúng chuyện đã xảy ra, không hư cấu</span>
+                                </div>
+                                <div class="principle-item">
+                                    <span>✅</span>
+                                    <span><strong>Không tư nhân hoá:</strong> Câu chuyện là của dự án, không phải của 1
+                                        cá nhân</span>
+                                </div>
+                                <div class="principle-item">
+                                    <span>✅</span>
+                                    <span><strong>Có bằng chứng:</strong> Mọi tuyên bố đều link được tới dữ liệu
+                                        gốc</span>
+                                </div>
+                                <div class="principle-item">
+                                    <span>✅</span>
+                                    <span><strong>Liên tục:</strong> Không cần viral — cần đều đặn, tích lũy uy tín dài
+                                        hạn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote -->
+            <div class="storytelling-quote fade-in">
+                <blockquote>
+                    "Năm trụ cột phát triển bền vững trở thành nội dung quảng bá thuyết phục nhất cho nông sản Việt —
+                    không cần chi tiền quảng cáo, chỉ cần minh bạch."
+                </blockquote>
+                <div class="quote-links">
+                    <span>Xem bằng chứng:</span>
+                    <a href="#diary">📝 Nhật ký vườn</a>
+                    <a href="#traceability">🔍 Truy xuất QR</a>
+                    <a href="#open-finance">💰 Tài chính mở</a>
+                    <a href="#partnership">🤝 Hợp tác nông dân</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERSHIP MODELS -->
+    <section id="partnership">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">🤝 MÔ HÌNH HỢP TÁC</span>
+                <h2>Phương Án Cho Người Dân</h2>
+                <p>Lợi nhuận kinh tế trực tiếp đẩy về cho nông dân. Dự án lấy lợi nhuận gia tăng trên hệ thống.</p>
+            </div>
+            <div class="model-cards fade-in">
+                <div class="model-card">
+                    <div class="model-number">01</div>
+                    <h4>Thuê Đất</h4>
+                    <p>Dự án thuê toàn bộ vườn, người dân hỗ trợ chăm sóc.</p>
+                    <div class="model-details">
+                        <div class="model-detail"><span class="detail-label">Giá
+                                thuê:</span><span>500.000đ/sào/năm</span></div>
+                        <div class="model-detail"><span class="detail-label">Thời hạn:</span><span>Tối thiểu 3
+                                năm</span></div>
+                        <div class="model-detail"><span class="detail-label">Vai trò dân:</span><span>Chăm sóc, nhận
+                                công</span></div>
+                    </div>
+                </div>
+                <div class="model-card recommended">
+                    <div class="model-number">02</div>
+                    <h4>Hợp Tác Trồng</h4>
+                    <p>Người dân tự trồng, dự án bao tiêu đầu ra với giá cam kết.</p>
+                    <div class="model-details">
+                        <div class="model-detail"><span class="detail-label">Cây giống:</span><span>20.000đ/cây (dự án
+                                hỗ trợ 10k)</span></div>
+                        <div class="model-detail"><span class="detail-label">Thu mua:</span><span>450.000đ/kg tươi (năm
+                                1-2)</span></div>
+                        <div class="model-detail"><span class="detail-label">Cam kết:</span><span>Mua tối thiểu
+                                20kg/hộ/năm</span></div>
+                        <div class="model-detail"><span class="detail-label">Điều kiện:</span><span>Canh tác sạch, không
+                                hóa chất</span></div>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-number">03</div>
+                    <h4>Đầu Tư Toàn Phần</h4>
+                    <p>Dự án đầu tư hoàn toàn cây, người dân chăm sóc và trừ dần.</p>
+                    <div class="model-details">
+                        <div class="model-detail"><span class="detail-label">Giá cây:</span><span>25.000đ/cây (trừ vào
+                                thu mua)</span></div>
+                        <div class="model-detail"><span class="detail-label">Đặt cọc:</span><span>10 triệu đảm
+                                bảo</span></div>
+                        <div class="model-detail"><span class="detail-label">Thời hạn:</span><span>Hợp đồng 3 năm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM & PROGRESS -->
+    <section id="progress">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">👥 ĐỘI NGŨ & TIẾN ĐỘ</span>
+                <h2>Hành Trình Từ Số Không</h2>
+                <p>"Chúng ta sẽ học cách làm một dự án từ sơ khởi, vừa làm vừa hoàn thiện dựa trên thực tế."</p>
+            </div>
+
+            <div class="team-grid fade-in" style="margin-bottom: var(--space-3xl)">
+                <div class="team-member">
+                    <div class="team-avatar">🌾</div>
+                    <div class="name">A. Phương</div>
+                    <div class="role">Trưởng dự án</div>
+                    <div class="contrib">Chiến lược, đàm phán, chăm sóc</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">💻</div>
+                    <div class="name">Nam Vũ</div>
+                    <div class="role">Công nghệ</div>
+                    <div class="contrib">Số hóa, truy xuất nguồn gốc</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">🏡</div>
+                    <div class="name">Hoàng Cầm</div>
+                    <div class="role">Bản địa</div>
+                    <div class="contrib">Quỹ đất, lao động, bản địa</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">💰</div>
+                    <div class="name">Hùng Cường</div>
+                    <div class="role">Đầu tư</div>
+                    <div class="contrib">Góp vốn 20 triệu</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">📊</div>
+                    <div class="name">Mạnh Cường</div>
+                    <div class="role">Nghiên cứu</div>
+                    <div class="contrib">Phân tích thị trường</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">🍵</div>
+                    <div class="name">Thế Trường</div>
+                    <div class="role">Sản phẩm</div>
+                    <div class="contrib">Trà ướp hoa mộc</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">📋</div>
+                    <div class="name">Anh Thơ</div>
+                    <div class="role">Pháp lý</div>
+                    <div class="contrib">HTX Chân Minh, pháp nhân</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">🌏</div>
+                    <div class="name">Thu Trang</div>
+                    <div class="role">Nghiên cứu TQ</div>
+                    <div class="contrib">Thị trường Trung Quốc</div>
+                </div>
+            </div>
+
+            <h3 class="text-center mb-lg fade-in" style="color:var(--gold)">📅 Dòng Thời Gian Dự Án</h3>
+            <div class="timeline fade-in">
+                <div class="timeline-item done">
+                    <div class="timeline-date">20/02/2026</div>
+                    <h4>Khởi động dự án</h4>
+                    <p>A. Phương đề xuất 2 hướng (nhỏ vs lớn). Nhóm chọn hướng chuyên nghiệp. Hoạch định tài chính sơ
+                        khởi.</p>
+                </div>
+                <div class="timeline-item done">
+                    <div class="timeline-date">23/02/2026</div>
+                    <h4>Đàm phán mua cây giống</h4>
+                    <p>Tìm vườn mộc thanh lý ~7.000 cây. Đàm phán xuống 7.000đ/cây nhổ gốc. Hùng Cường & Mạnh Cường góp
+                        vốn đầu tiên.</p>
+                </div>
+                <div class="timeline-item done">
+                    <div class="timeline-date">25/02/2026</div>
+                    <h4>Phân công nghiên cứu</h4>
+                    <p>Cường: báo cáo khoa học hoa mộc. Cầm: kỹ thuật trồng. Thu Trang: thị trường TQ. Nam Vũ: hệ thống
+                        số hóa.</p>
+                </div>
+                <div class="timeline-item done">
+                    <div class="timeline-date">01/03/2026</div>
+                    <h4>Lấy cây giống Đợt 1</h4>
+                    <p>Vận chuyển 2.520 cây về vườn. 3 hộ dân tham gia (600 cây), hỗ trợ anh Sáng 500 cây, dự án trồng
+                        1.380 cây.</p>
+                </div>
+                <div class="timeline-item done">
+                    <div class="timeline-date">04/03/2026</div>
+                    <h4>Trồng cây & Quyết toán Đợt 1</h4>
+                    <p>Tổ chức trồng cùng đội ngũ. Ghi chép chi phí minh bạch. Được tặng thêm 120 cây giống.</p>
+                </div>
+                <div class="timeline-item progress">
+                    <div class="timeline-date">Q2-Q3/2026</div>
+                    <h4>Chăm sóc & Xây dựng nền tảng</h4>
+                    <p>Chăm sóc cây, thiết lập kênh truyền thông, xây dựng thương hiệu, đăng ký pháp nhân.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">10/2027</div>
+                    <h4>Thu hoạch đầu tiên</h4>
+                    <p>Mục tiêu: hoàn thiện bao bì, nhãn hiệu, hệ thống bán hàng trước thu hoạch.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2028</div>
+                    <h4>Vận hành thương mại</h4>
+                    <p>Sản xuất và bán hàng quy mô. Đánh giá, rút kinh nghiệm, hoàn thiện cơ chế tài chính.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TRANSPARENCY SYSTEM — 6 PILLARS ====== -->
+
+    <!-- PILLAR 1: FARM DIARY -->
+    <section id="diary" class="transparency-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">📝 NHẬT KÝ VƯỜN</span>
+                <h2>Mỗi Ngày Một Câu Chuyện</h2>
+                <p>Ghi chép mọi hoạt động chăm sóc vườn — đây là bằng chứng minh bạch và cũng là tài sản tri thức.</p>
+            </div>
+
+            <!-- Diary Principle -->
+            <div class="diary-formula fade-in">
+                <div class="formula-item">
+                    <span class="formula-icon">📸</span>
+                    <span class="formula-label">Ảnh thực tế</span>
+                </div>
+                <span class="formula-plus">+</span>
+                <div class="formula-item">
+                    <span class="formula-icon">📍</span>
+                    <span class="formula-label">Vị trí GPS</span>
+                </div>
+                <span class="formula-plus">+</span>
+                <div class="formula-item">
+                    <span class="formula-icon">📅</span>
+                    <span class="formula-label">Thời gian</span>
+                </div>
+                <span class="formula-plus">+</span>
+                <div class="formula-item">
+                    <span class="formula-icon">✍️</span>
+                    <span class="formula-label">Ghi chú</span>
+                </div>
+                <span class="formula-equals">=</span>
+                <div class="formula-item formula-result">
+                    <span class="formula-icon">✅</span>
+                    <span class="formula-label">Minh bạch</span>
+                </div>
+            </div>
+
+            <!-- Diary Timeline -->
+            <div class="diary-timeline fade-in">
+                <div class="diary-entry" data-date="2026-03-04">
+                    <div class="diary-date">
+                        <span class="diary-day">04</span>
+                        <span class="diary-month">Tháng 3</span>
+                        <span class="diary-year">2026</span>
+                    </div>
+                    <div class="diary-content">
+                        <div class="diary-tags">
+                            <span class="diary-tag tag-activity">🌱 Trồng cây</span>
+                            <span class="diary-tag tag-location">📍 Vườn Ba Vì</span>
+                        </div>
+                        <h4>Trồng cây Đợt 1 — 2.520 cây</h4>
+                        <p>Đội ngũ cùng hộ dân trồng 2.520 cây giống lô đầu. Chia 3 vườn: Vườn 1 (Hoàng Cầm, 600 cây),
+                            Vườn 2 (dự án, 1.380 cây), hỗ trợ anh Sáng 500 cây. Được tặng thêm 120 cây.</p>
+                        <div class="diary-meta">
+                            <span>👥 A. Phương, Hoàng Cầm, đội ngũ</span>
+                            <span>🌡️ 22°C, trời mát</span>
+                        </div>
+                        <div class="diary-evidence">
+                            <span class="evidence-badge verified">✅ Có ảnh chụp</span>
+                            <span class="evidence-badge verified">✅ Có giấy tờ quyết toán</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diary-entry" data-date="2026-03-01">
+                    <div class="diary-date">
+                        <span class="diary-day">01</span>
+                        <span class="diary-month">Tháng 3</span>
+                        <span class="diary-year">2026</span>
+                    </div>
+                    <div class="diary-content">
+                        <div class="diary-tags">
+                            <span class="diary-tag tag-activity">🚛 Vận chuyển</span>
+                            <span class="diary-tag tag-location">📍 Ba Vì</span>
+                        </div>
+                        <h4>Lấy cây giống Đợt 1</h4>
+                        <p>Vận chuyển 2.520 cây từ vườn thanh lý về Ba Vì. Cây Tứ Quý Quế, 1-2 năm tuổi, giá đàm phán
+                            7.000đ/cây (giá gốc 20.000đ).</p>
+                        <div class="diary-meta">
+                            <span>💰 17.640.000đ (2.520 × 7.000đ)</span>
+                            <span>🚛 Chi phí vận chuyển riêng</span>
+                        </div>
+                        <div class="diary-evidence">
+                            <span class="evidence-badge verified">✅ Có biên lai</span>
+                            <span class="evidence-badge verified">✅ Xác nhận số lượng</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diary-entry" data-date="2026-02-25">
+                    <div class="diary-date">
+                        <span class="diary-day">25</span>
+                        <span class="diary-month">Tháng 2</span>
+                        <span class="diary-year">2026</span>
+                    </div>
+                    <div class="diary-content">
+                        <div class="diary-tags">
+                            <span class="diary-tag tag-research">🔬 Nghiên cứu</span>
+                            <span class="diary-tag tag-team">👥 Đội ngũ</span>
+                        </div>
+                        <h4>Phân công nghiên cứu chuyên sâu</h4>
+                        <p>Mỗi thành viên nhận 1 mảng: Cường → báo cáo khoa học, Cầm → kỹ thuật trồng, Thu Trang → thị
+                            trường TQ, Nam Vũ → hệ thống số hóa, Mạnh Cường → phân tích thị trường VN.</p>
+                        <div class="diary-meta">
+                            <span>📊 5 mảng nghiên cứu</span>
+                            <span>⏱️ Deadline: 2 tuần</span>
+                        </div>
+                        <div class="diary-evidence">
+                            <span class="evidence-badge verified">✅ Ghi chép cuộc họp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diary-entry" data-date="2026-02-23">
+                    <div class="diary-date">
+                        <span class="diary-day">23</span>
+                        <span class="diary-month">Tháng 2</span>
+                        <span class="diary-year">2026</span>
+                    </div>
+                    <div class="diary-content">
+                        <div class="diary-tags">
+                            <span class="diary-tag tag-finance">💰 Đầu tư</span>
+                            <span class="diary-tag tag-activity">🤝 Đàm phán</span>
+                        </div>
+                        <h4>Đàm phán mua giống & Huy động vốn đầu tiên</h4>
+                        <p>Phát hiện vườn mộc ~7.000 cây đang thanh lý. Đàm phán giá từ 15.000đ xuống 7.000đ/cây (nhổ
+                            gốc). Hùng Cường góp 20 triệu, Mạnh Cường góp 10 triệu — khoản đầu tư đầu tiên của dự án.
+                        </p>
+                        <div class="diary-meta">
+                            <span>💰 Vốn huy động: 30.000.000đ</span>
+                            <span>🌱 Nguồn: vườn thanh lý</span>
+                        </div>
+                        <div class="diary-evidence">
+                            <span class="evidence-badge verified">✅ Ghi nhận góp vốn</span>
+                            <span class="evidence-badge verified">✅ Giá đàm phán xác nhận</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diary-entry" data-date="2026-02-20">
+                    <div class="diary-date">
+                        <span class="diary-day">20</span>
+                        <span class="diary-month">Tháng 2</span>
+                        <span class="diary-year">2026</span>
+                    </div>
+                    <div class="diary-content">
+                        <div class="diary-tags">
+                            <span class="diary-tag tag-milestone">🚀 Mốc quan trọng</span>
+                        </div>
+                        <h4>Ngày khởi động dự án Quế Hoa</h4>
+                        <p>A. Phương đề xuất 2 hướng: nhỏ (tự trồng) vs lớn (dự án chuyên nghiệp). Cả nhóm quyết định:
+                            "Mình sẽ làm một dự án bài bản từ đầu — học mọi thứ, ghi chép mọi thứ, minh bạch mọi thứ."
+                        </p>
+                        <div class="diary-meta">
+                            <span>🎯 Quyết định: Hướng chuyên nghiệp</span>
+                        </div>
+                        <div class="diary-evidence">
+                            <span class="evidence-badge verified">✅ Biên bản thảo luận</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="diary-cta fade-in">
+                <p>📌 Nhật ký được cập nhật liên tục. Mọi hoạt động đều được ghi chép minh bạch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILLAR 2: QR TRACEABILITY -->
+    <section id="traceability" class="transparency-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">🔍 TRUY XUẤT NGUỒN GỐC</span>
+                <h2>Quét Mã — Biết Nguồn Gốc</h2>
+                <p>Mỗi lô sản phẩm có mã QR riêng → dẫn đến trang truy xuất hiển thị toàn bộ hành trình.</p>
+            </div>
+
+            <div class="qr-demo-wrapper fade-in">
+                <!-- QR Scan Simulation (phone) -->
+                <div class="qr-scan-area">
+                    <div class="qr-phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="scan-overlay">
+                                <div class="scan-corners">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                                <div class="scan-line"></div>
+                                <p class="scan-text">Mô phỏng quét QR</p>
+                            </div>
+                            <button class="scan-btn" id="scanBtn" onclick="simulateScan()">📱 Quét thử</button>
+                        </div>
+                    </div>
+                    <div class="qr-scan-hint">
+                        <p>👆 Quét thử để xem trang truy xuất</p>
+                        <p class="qr-scan-sub">Mỗi lô sản phẩm có trang riêng như mẫu bên →</p>
+                    </div>
+                </div>
+
+                <!-- QR Result — Rich Traceability Page -->
+                <div class="qr-result" id="qrResult">
+
+                    <!-- ① Product Header -->
+                    <div class="qr-result-header">
+                        <span class="qr-logo">🌿</span>
+                        <h3>Trà Hoa Quế Mộc Sấy Thăng Hoa</h3>
+                        <div class="qr-batch-row">
+                            <span class="batch-id">Lô #QH-2028-001</span>
+                            <span class="batch-fresh">✅ Còn hạn đến 10/2029</span>
+                        </div>
+                        <p class="qr-product-tagline">Thu hoạch tháng 10/2027 · Ba Vì, Hà Nội · Không hóa chất</p>
+                    </div>
+
+                    <!-- ② Bản đồ vườn -->
+                    <div class="qr-map-block">
+                        <div class="qr-map-header">
+                            <span class="qr-section-label">📍 Vườn & Vị Trí</span>
+                        </div>
+                        <div class="qr-map-frame">
+                            <div class="qr-map-pin">📍</div>
+                            <div class="qr-map-overlay">
+                                <div class="map-plot-badge">Lô A3 · Sườn Đông</div>
+                                <div class="map-terrain">Độ cao ~350m · Hướng Đông Nam · Đất thịt pha cát</div>
+                            </div>
+                            <div class="qr-map-grid"></div>
+                        </div>
+                        <div class="qr-map-stats">
+                            <div class="map-stat"><span class="ms-num">280</span><span class="ms-label">cây / lô</span>
+                            </div>
+                            <div class="map-stat"><span class="ms-num">1.200m²</span><span class="ms-label">diện
+                                    tích</span></div>
+                            <div class="map-stat"><span class="ms-num">350m</span><span class="ms-label">độ cao</span>
+                            </div>
+                            <div class="map-stat"><span class="ms-num">4km</span><span class="ms-label">từ VQG Ba
+                                    Vì</span></div>
+                        </div>
+                    </div>
+
+                    <!-- ③ Câu chuyện lô này -->
+                    <div class="qr-story-block">
+                        <span class="qr-section-label">📖 Câu Chuyện Lô Này</span>
+                        <blockquote class="qr-story-quote">
+                            "Lô A3 này được trồng ngay sau đợt mưa đầu tháng 3. Hôm đó anh Quý mang theo thằng con trai
+                            ra phụ đào hố — tụi nhỏ hỏi 'ủ mùi thơm thì bán cho ai hả ba?', nghe mà ấm lòng."
+                        </blockquote>
+                        <div class="qr-story-source">
+                            <span>📅 04/03/2026</span>
+                            <span>🎙️ Nhật ký giọng nói · Anh Nguyễn Văn Quý</span>
+                        </div>
+                    </div>
+
+                    <!-- ④ Hành trình từ vườn đến tay -->
+                    <div class="qr-journey-block">
+                        <span class="qr-section-label">🛤️ Hành Trình Lô #QH-2028-001</span>
+                        <div class="qr-journey-timeline">
+                            <div class="qj-step done">
+                                <div class="qj-dot"></div>
+                                <div class="qj-content">
+                                    <span class="qj-date">04/03/2026</span>
+                                    <span class="qj-title">🌱 Trồng cây</span>
+                                    <span class="qj-detail">Trồng 280 cây · Lô A3 · Anh Quý + con trai</span>
+                                </div>
+                            </div>
+                            <div class="qj-step done">
+                                <div class="qj-dot"></div>
+                                <div class="qj-content">
+                                    <span class="qj-date">Tháng 4–9/2026</span>
+                                    <span class="qj-title">🌿 Chăm sóc định kỳ</span>
+                                    <span class="qj-detail">Tưới 2 lần/tuần · Bón phân gà 3 đợt · Cắt cỏ 2 lần</span>
+                                </div>
+                            </div>
+                            <div class="qj-step done">
+                                <div class="qj-dot"></div>
+                                <div class="qj-content">
+                                    <span class="qj-date">15/10/2027</span>
+                                    <span class="qj-title">🌸 Thu hoạch</span>
+                                    <span class="qj-detail">42kg hoa tươi · Thu tay 100% · Chọn hoa đúng độ nở</span>
+                                </div>
+                            </div>
+                            <div class="qj-step done">
+                                <div class="qj-dot"></div>
+                                <div class="qj-content">
+                                    <span class="qj-date">17/10/2027</span>
+                                    <span class="qj-title">❄️ Sấy thăng hoa</span>
+                                    <span class="qj-detail">Mẻ SD-2027-042 · 42kg tươi → 6,3kg khô · 15% hao hụt</span>
+                                </div>
+                            </div>
+                            <div class="qj-step done">
+                                <div class="qj-dot"></div>
+                                <div class="qj-content">
+                                    <span class="qj-date">20/10/2027</span>
+                                    <span class="qj-title">📦 Đóng gói & QR</span>
+                                    <span class="qj-detail">Túi 25g · Hàn nhiệt · In mã QR · Dán nhãn lô</span>
+                                </div>
+                            </div>
+                            <div class="qj-step active">
+                                <div class="qj-dot"></div>
+                                <div class="qj-content">
+                                    <span class="qj-date">Bây giờ</span>
+                                    <span class="qj-title">🫖 Trong tay bạn</span>
+                                    <span class="qj-detail">Từ vườn đến tay bạn: 730 ngày chăm sóc</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ⑤ Hồ sơ chăm sóc & nông dân -->
+                    <div class="qr-farmer-block">
+                        <span class="qr-section-label">🧑‍🌾 Người Trồng & Chăm Sóc</span>
+                        <div class="qr-farmer-card">
+                            <div class="farmer-avatar">🧑‍🌾</div>
+                            <div class="farmer-info">
+                                <strong>Anh Nguyễn Văn Quý</strong>
+                                <span>Hoàng Cầm, Ba Vì · HTX Chân Minh</span>
+                                <span>Mô hình: Đồng trồng · Tham gia từ đợt 1 (03/2026)</span>
+                            </div>
+                            <div class="farmer-care-log">
+                                <div class="care-item"><span class="care-icon">💧</span><span>Tưới 2×/tuần · Nước suối
+                                        tự nhiên</span></div>
+                                <div class="care-item"><span class="care-icon">🐄</span><span>Phân gà hoai mục · 3
+                                        đợt/năm</span></div>
+                                <div class="care-item"><span class="care-icon">✂️</span><span>Cắt cỏ tay · 3
+                                        lần/năm</span></div>
+                                <div class="care-item"><span class="care-icon">🚫</span><span>Không thuốc cỏ · Không
+                                        thuốc trừ sâu</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ⑥ Dinh dưỡng & cách dùng -->
+                    <div class="qr-usage-block">
+                        <span class="qr-section-label">🫖 Cách Dùng & Giá Trị</span>
+                        <div class="qr-usage-grid">
+                            <div class="usage-item">
+                                <span class="usage-icon">🌡️</span>
+                                <span class="usage-label">Nhiệt độ pha</span>
+                                <span class="usage-val">80–85°C</span>
+                            </div>
+                            <div class="usage-item">
+                                <span class="usage-icon">⏱️</span>
+                                <span class="usage-label">Thời gian ủ</span>
+                                <span class="usage-val">3–5 phút</span>
+                            </div>
+                            <div class="usage-item">
+                                <span class="usage-icon">🌸</span>
+                                <span class="usage-label">Lượng dùng</span>
+                                <span class="usage-val">3–5 bông / ấm 300ml</span>
+                            </div>
+                            <div class="usage-item">
+                                <span class="usage-icon">🔄</span>
+                                <span class="usage-label">Có thể pha lại</span>
+                                <span class="usage-val">2–3 lần</span>
+                            </div>
+                        </div>
+                        <div class="qr-benefits">
+                            <span class="benefit-tag">🫁 Thông họng, trị ho</span>
+                            <span class="benefit-tag">🌙 An thần, ngủ ngon</span>
+                            <span class="benefit-tag">💆 Giảm stress</span>
+                            <span class="benefit-tag">🫶 Làm đẹp da</span>
+                            <span class="benefit-tag">💧 Thay nước hàng ngày</span>
+                        </div>
+                    </div>
+
+                    <!-- ⑦ Chứng nhận -->
+                    <div class="qr-certifications">
+                        <div class="cert-item verified">✅ Không thuốc trừ sâu <a href="#diary" class="cert-proof">→ bằng
+                                chứng</a></div>
+                        <div class="cert-item verified">✅ Không thuốc cỏ <a href="#diary" class="cert-proof">→ bằng
+                                chứng</a></div>
+                        <div class="cert-item verified">✅ Phân chuồng hoai mục <a href="#diary" class="cert-proof">→
+                                nhật ký bón phân</a></div>
+                        <div class="cert-item verified">✅ Sấy thăng hoa — 0 phụ gia <a href="#open-finance"
+                                class="cert-proof">→ chi phí</a></div>
+                        <div class="cert-item verified">✅ Tài chính công khai <a href="#open-finance"
+                                class="cert-proof">→ xem sổ</a></div>
+                    </div>
+
+                    <!-- ⑧ Đánh giá -->
+                    <div class="qr-review-block">
+                        <span class="qr-section-label">⭐ Từ Người Đã Dùng</span>
+                        <div class="qr-review">
+                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            <p class="review-text">"Mua vì tò mò, giờ uống mỗi sáng thay cà phê. Hương rất thanh, không
+                                ngấy, biết đúng cây từ đâu nên uống yên tâm hơn."</p>
+                            <span class="review-author">— Chị Linh, Hà Nội · Lần mua thứ 3</span>
+                        </div>
+                    </div>
+
+                    <div class="qr-actions">
+                        <a href="#diary" class="qr-action-btn">📖 Nhật ký chăm sóc</a>
+                        <a href="#open-finance" class="qr-action-btn secondary">💰 Tài chính minh bạch</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PILLAR 3: OPEN FINANCE -->
+            <section id="open-finance" class="transparency-section">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-tag">💰 TÀI CHÍNH MỞ</span>
+                        <h2>Mọi Đồng Đều Minh Bạch</h2>
+                        <p>Ai góp bao nhiêu, chi gì, bao giờ — tất cả được ghi chép công khai. Đây là nền tảng tin
+                            tưởng.</p>
+                    </div>
+
+                    <!-- Investment Tracker -->
+                    <h3 class="text-center mb-lg fade-in" style="color:var(--gold)">📊 Sổ Đầu Tư — Đợt 1</h3>
+                    <div class="fade-in">
+                        <table class="cost-table open-finance-table">
+                            <thead>
+                                <tr>
+                                    <th>Người góp</th>
+                                    <th>Khoản góp</th>
+                                    <th class="amount">Số tiền</th>
+                                    <th>Ngày</th>
+                                    <th>Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hùng Cường</td>
+                                    <td>Vốn đầu tư ban đầu</td>
+                                    <td class="amount">20.000.000đ</td>
+                                    <td>23/02/2026</td>
+                                    <td><span class="status-badge badge-done">✅ Đã nhận</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mạnh Cường</td>
+                                    <td>Vốn đầu tư ban đầu</td>
+                                    <td class="amount">10.000.000đ</td>
+                                    <td>23/02/2026</td>
+                                    <td><span class="status-badge badge-done">✅ Đã nhận</span></td>
+                                </tr>
+                                <tr>
+                                    <td>A. Phương</td>
+                                    <td>Công sức + chi phí vận hành</td>
+                                    <td class="amount">—</td>
+                                    <td>Liên tục</td>
+                                    <td><span class="status-badge badge-progress">🔄 Đang ghi</span></td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td colspan="2"><strong>TỔNG VỐN ĐỢT 1</strong></td>
+                                    <td class="amount"><strong>30.000.000đ</strong></td>
+                                    <td colspan="2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Expense Tracker -->
+                    <h3 class="text-center mb-lg mt-xl fade-in" style="color:var(--gold)">📋 Sổ Chi Tiêu — Đợt 1</h3>
+                    <div class="fade-in">
+                        <table class="cost-table open-finance-table">
+                            <thead>
+                                <tr>
+                                    <th>Hạng mục</th>
+                                    <th>Chi tiết</th>
+                                    <th class="amount">Chi phí</th>
+                                    <th>Ngày</th>
+                                    <th>Bằng chứng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mua cây giống</td>
+                                    <td>2.520 cây × 7.000đ (thanh lý)</td>
+                                    <td class="amount">17.640.000đ</td>
+                                    <td>01/03/2026</td>
+                                    <td><span class="status-badge badge-done">📄 Biên lai</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Vận chuyển</td>
+                                    <td>Chuyển cây từ vườn thanh lý → Ba Vì</td>
+                                    <td class="amount">2.500.000đ</td>
+                                    <td>01/03/2026</td>
+                                    <td><span class="status-badge badge-done">📄 Hóa đơn</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Công trồng</td>
+                                    <td>Nhân công trồng 2.520 cây</td>
+                                    <td class="amount">3.000.000đ</td>
+                                    <td>04/03/2026</td>
+                                    <td><span class="status-badge badge-done">📄 Xác nhận</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Phân bón lót</td>
+                                    <td>Lân + vôi bón lót gốc</td>
+                                    <td class="amount">2.000.000đ</td>
+                                    <td>04/03/2026</td>
+                                    <td><span class="status-badge badge-done">📄 Biên lai</span></td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td colspan="2"><strong>TỔNG CHI ĐỢT 1</strong></td>
+                                    <td class="amount"><strong>25.140.000đ</strong></td>
+                                    <td colspan="2">Còn lại: 4.860.000đ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Financial Summary Cards -->
+                    <div class="open-finance-summary fade-in">
+                        <div class="of-card">
+                            <div class="of-icon">💵</div>
+                            <div class="of-value">30 triệu</div>
+                            <div class="of-label">Tổng vốn huy động</div>
+                        </div>
+                        <div class="of-card">
+                            <div class="of-icon">📤</div>
+                            <div class="of-value">25.14 triệu</div>
+                            <div class="of-label">Đã chi tiêu</div>
+                        </div>
+                        <div class="of-card">
+                            <div class="of-icon">🏦</div>
+                            <div class="of-value">4.86 triệu</div>
+                            <div class="of-label">Quỹ còn lại</div>
+                        </div>
+                        <div class="of-card">
+                            <div class="of-icon">📊</div>
+                            <div class="of-value">83.8%</div>
+                            <div class="of-label">Tỷ lệ giải ngân</div>
+                        </div>
+                    </div>
+
+                    <div class="diary-cta fade-in">
+                        <p>🔒 Mọi giao dịch được ghi nhận minh bạch. Sổ tài chính mở cho tất cả thành viên dự án.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DATA JOURNEY — Mô Tả Hành Trình Dữ Liệu -->
+            <section id="data-journey" class="data-journey-section">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <span class="section-tag">🛤️ HÀNH TRÌNH DỮ LIỆU</span>
+                        <h2>Từ Vườn Đến Ly Trà — Thu Thập Gì?</h2>
+                        <p>Mỗi giai đoạn cần thu thập dữ liệu khác nhau. Chỉ cần nhìn vào sơ đồ là biết ngay phải ghi
+                            nhận
+                            gì tại mỗi bước.</p>
+                    </div>
+
+                    <div class="journey-pipeline fade-in">
+
+                        <!-- STAGE 1: Tại vườn (Passive + Voice) -->
+                        <div class="journey-stage" data-stage="field">
+                            <div class="stage-header">
+                                <div class="stage-icon-wrap">
+                                    <span class="stage-icon">🌿</span>
+                                    <span class="stage-number">01</span>
+                                </div>
+                                <h3>Tại Vườn</h3>
+                                <p class="stage-method">Tự động + Giọng nói</p>
+                            </div>
+                            <div class="stage-body">
+                                <div class="data-group">
+                                    <span class="group-label">📡 Thu tự động</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-auto">📍 GPS vị trí</span>
+                                        <span class="dtag dtag-auto">🌡️ Nhiệt độ</span>
+                                        <span class="dtag dtag-auto">💧 Độ ẩm</span>
+                                        <span class="dtag dtag-auto">⏱️ Thời gian có mặt</span>
+                                    </div>
+                                </div>
+                                <div class="data-group">
+                                    <span class="group-label">🎙️ Nông dân nói</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-voice">💬 "Hôm nay tưới nước"</span>
+                                        <span class="dtag dtag-voice">💬 "Bón 2 bao phân gà"</span>
+                                        <span class="dtag dtag-voice">💬 "Cắt cỏ vườn trên"</span>
+                                    </div>
+                                </div>
+                                <div class="data-group">
+                                    <span class="group-label">📸 Tư liệu</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-media">📷 Ảnh vườn</span>
+                                        <span class="dtag dtag-media">🎥 Video</span>
+                                        <span class="dtag dtag-media">🎙️ Ghi âm</span>
+                                        <span class="dtag dtag-media">📝 Câu chuyện</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-arrow">
+                            <svg viewBox="0 0 40 24" fill="none">
+                                <path d="M0 12H32M32 12L24 4M32 12L24 20" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+
+                        <!-- STAGE 2: Vật tư đầu vào -->
+                        <div class="journey-stage" data-stage="input">
+                            <div class="stage-header">
+                                <div class="stage-icon-wrap">
+                                    <span class="stage-icon">📦</span>
+                                    <span class="stage-number">02</span>
+                                </div>
+                                <h3>Vật Tư Đầu Vào</h3>
+                                <p class="stage-method">Nhập tay + Ảnh chụp</p>
+                            </div>
+                            <div class="stage-body">
+                                <div class="data-group">
+                                    <span class="group-label">🌱 Giống & Phân bón</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-manual">🏷️ Loại vật tư</span>
+                                        <span class="dtag dtag-manual">⚖️ Số lượng/kg</span>
+                                        <span class="dtag dtag-manual">💰 Đơn giá</span>
+                                        <span class="dtag dtag-manual">👤 Nguồn mua</span>
+                                    </div>
+                                </div>
+                                <div class="data-group">
+                                    <span class="group-label">📄 Chứng từ</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-doc">🪪 CCCD người bán</span>
+                                        <span class="dtag dtag-doc">📷 Ảnh biên nhận</span>
+                                        <span class="dtag dtag-doc">✍️ Chữ ký e-sign</span>
+                                    </div>
+                                </div>
+                                <div class="data-group">
+                                    <span class="group-label">🔖 Phân loại tự động</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-status dtag-ok">✅ Có chứng từ</span>
+                                        <span class="dtag dtag-status dtag-warn">⚠️ Chỉ bảng kê</span>
+                                        <span class="dtag dtag-status dtag-err">❌ Chưa có</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-arrow">
+                            <svg viewBox="0 0 40 24" fill="none">
+                                <path d="M0 12H32M32 12L24 4M32 12L24 20" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+
+                        <!-- STAGE 3: Thu hoạch -->
+                        <div class="journey-stage" data-stage="harvest">
+                            <div class="stage-header">
+                                <div class="stage-icon-wrap">
+                                    <span class="stage-icon">🌸</span>
+                                    <span class="stage-number">03</span>
+                                </div>
+                                <h3>Thu Hoạch</h3>
+                                <p class="stage-method">QR giao nhận</p>
+                            </div>
+                            <div class="stage-body">
+                                <div class="data-group">
+                                    <span class="group-label">🌾 Sổ giao nhận số</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-manual">⚖️ Kg hoa tươi</span>
+                                        <span class="dtag dtag-manual">📍 Lô vườn nào</span>
+                                        <span class="dtag dtag-manual">👤 Ai thu hoạch</span>
+                                        <span class="dtag dtag-auto">📅 Ngày giờ</span>
+                                    </div>
+                                </div>
+                                <div class="data-group">
+                                    <span class="group-label">📊 Đối chiếu</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-calc">📈 Thực tế vs Dự kiến</span>
+                                        <span class="dtag dtag-calc">🏆 Hiệu suất vườn</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-arrow">
+                            <svg viewBox="0 0 40 24" fill="none">
+                                <path d="M0 12H32M32 12L24 4M32 12L24 20" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+
+                        <!-- STAGE 4: Chế biến -->
+                        <div class="journey-stage" data-stage="process">
+                            <div class="stage-header">
+                                <div class="stage-icon-wrap">
+                                    <span class="stage-icon">🏭</span>
+                                    <span class="stage-number">04</span>
+                                </div>
+                                <h3>Chế Biến & Đóng Gói</h3>
+                                <p class="stage-method">Quét QR + Nhập thông số</p>
+                            </div>
+                            <div class="stage-body">
+                                <div class="data-group">
+                                    <span class="group-label">❄️ Xưởng sấy thăng hoa</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-manual">🔢 Mã mẻ sấy (Lot)</span>
+                                        <span class="dtag dtag-manual">⏱️ Giờ vào / ra</span>
+                                        <span class="dtag dtag-calc">📉 Tỷ lệ hao hụt</span>
+                                        <span class="dtag dtag-manual">🌡️ Nhiệt độ sấy</span>
+                                    </div>
+                                </div>
+                                <div class="data-group">
+                                    <span class="group-label">📦 Đóng gói</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-auto">🏷️ QR Code sản phẩm</span>
+                                        <span class="dtag dtag-manual">📊 Số túi / gói</span>
+                                        <span class="dtag dtag-auto">📅 Ngày sản xuất</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-arrow">
+                            <svg viewBox="0 0 40 24" fill="none">
+                                <path d="M0 12H32M32 12L24 4M32 12L24 20" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+
+                        <!-- STAGE 5: Kế toán -->
+                        <div class="journey-stage" data-stage="accounting">
+                            <div class="stage-header">
+                                <div class="stage-icon-wrap">
+                                    <span class="stage-icon">📊</span>
+                                    <span class="stage-number">05</span>
+                                </div>
+                                <h3>Kế Toán & Thuế</h3>
+                                <p class="stage-method">Tự động sinh từ dữ liệu</p>
+                            </div>
+                            <div class="stage-body">
+                                <div class="data-group">
+                                    <span class="group-label">📋 Tự động tạo</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-calc">📄 Bảng kê 01/TNDN</span>
+                                        <span class="dtag dtag-calc">💰 Giá vốn sản phẩm</span>
+                                        <span class="dtag dtag-calc">📊 B01-HTX, B02-HTX</span>
+                                    </div>
+                                </div>
+                                <div class="data-group">
+                                    <span class="group-label">🏛️ Ưu đãi thuế</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-ok">🚫 Miễn thuế TNDN</span>
+                                        <span class="dtag dtag-ok">🚫 Miễn GTGT sơ chế</span>
+                                        <span class="dtag dtag-ok">🚫 Miễn thuế đất→2030</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-arrow">
+                            <svg viewBox="0 0 40 24" fill="none">
+                                <path d="M0 12H32M32 12L24 4M32 12L24 20" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+
+                        <!-- STAGE 6: Khách hàng -->
+                        <div class="journey-stage" data-stage="customer">
+                            <div class="stage-header">
+                                <div class="stage-icon-wrap">
+                                    <span class="stage-icon">🫖</span>
+                                    <span class="stage-number">06</span>
+                                </div>
+                                <h3>Khách Hàng Quét QR</h3>
+                                <p class="stage-method">Storytelling tự động</p>
+                            </div>
+                            <div class="stage-body">
+                                <div class="data-group">
+                                    <span class="group-label">📱 Khách hàng thấy</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-story">🌿 Vùng trồng & gương mặt</span>
+                                        <span class="dtag dtag-story">📖 Câu chuyện nông dân</span>
+                                        <span class="dtag dtag-story">🎥 Video behind-the-scenes</span>
+                                        <span class="dtag dtag-story">✅ Chứng nhận sạch</span>
+                                    </div>
+                                </div>
+                                <div class="data-group">
+                                    <span class="group-label">🔄 Phản hồi về hệ thống</span>
+                                    <div class="data-tags">
+                                        <span class="dtag dtag-feedback">⭐ Đánh giá chất lượng</span>
+                                        <span class="dtag dtag-feedback">📞 Số điện thoại (CRM)</span>
+                                        <span class="dtag dtag-feedback">🎫 E-voucher mua lại</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Legend -->
+                    <div class="journey-legend fade-in">
+                        <span class="legend-title">Chú thích loại dữ liệu:</span>
+                        <div class="legend-items">
+                            <span class="dtag dtag-auto">📡 Tự động</span>
+                            <span class="dtag dtag-voice">🎙️ Giọng nói</span>
+                            <span class="dtag dtag-manual">✏️ Nhập tay</span>
+                            <span class="dtag dtag-media">📸 Đa phương tiện</span>
+                            <span class="dtag dtag-doc">📄 Chứng từ</span>
+                            <span class="dtag dtag-calc">⚙️ Hệ thống tính</span>
+                            <span class="dtag dtag-story">📖 Storytelling</span>
+                            <span class="dtag dtag-feedback">🔄 Phản hồi</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-brand">
+                            <h3>🌿 Quế Hoa Ba Vì</h3>
+                            <p>Dự án Nông nghiệp Sinh thái · Làng Gạo · HTX Chân Minh</p>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#knowledge-map">Bản đồ</a>
+                            <a href="#finance">Tài chính</a>
+                            <a href="#market">Thị trường</a>
+                            <a href="#progress">Tiến độ</a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2026 Quế Hoa Ba Vì — Knowledge System · "Vừa làm vừa hoàn thiện dựa trên thực tế"</p>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="script.js"></script>
+</body>
+
+</html>
